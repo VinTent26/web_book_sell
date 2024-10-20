@@ -23,8 +23,9 @@ namespace web.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
+            //return view
             return View();
+           
         }
     }
 }
