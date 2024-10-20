@@ -10,9 +10,10 @@ namespace web.MongoHelper
     {
         public static IMongoClient client { get; set; }
         public static IMongoDatabase database { get; set; }
-        public static string MongoConnection = "mongodb+srv://bookweb:Qm0pI1dvJYK5abDe@cluster0.ghoos.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-        public static string MongoDatabase = "web_book";
+        public static string MongoConnection = "mongodb+srv://thanhho200404:oJSNu0AwwBuPfeDK@web.wce7l.mongodb.net/?retryWrites=true&w=majority&appName=web";
+        public static string MongoDatabase = "web";
         public static IMongoCollection<Models.Product> product_collection { get; set; }
+        public static IMongoCollection<Models.User> user_collection { get; set; }
         internal static void ConnectToMongoService()
         {
             try
