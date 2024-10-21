@@ -10,8 +10,8 @@ namespace web.MongoHelper
     {
         public static IMongoClient client { get; set; }
         public static IMongoDatabase database { get; set; }
-        public static string MongoConnection = "mongodb+srv://thanhho200404:oJSNu0AwwBuPfeDK@web.wce7l.mongodb.net/?retryWrites=true&w=majority&appName=web";
-        public static string MongoDatabase = "web";
+        public static string MongoConnection = "mongodb+srv://vintentho:OhG5XzBlwjUglxZo@book.23laz.mongodb.net/";
+        public static string MongoDatabase = "book";
         public static IMongoCollection<Models.Product> product_collection { get; set; }
         public static IMongoCollection<Models.User> user_collection { get; set; }
         internal static void ConnectToMongoService()

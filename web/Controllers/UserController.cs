@@ -38,10 +38,10 @@ namespace web.Controllers
                 MongoHelper.MongoHelper.user_collection.InsertOneAsync(new Models.User
                 {
                     _id = id,
-                    FirstName = collection["Name"],
-                    LastName= collection["Description"],
-                    Adresss = collection["Price"],
-                    Phone = collection["Category"]
+                    FirstName = collection["FirstName"],
+                    LastName= collection["LastName"],
+                    Adresss = collection["Adresss"],
+                    Phone = collection["Phone"]
                 });
 
                 return RedirectToAction("Index");
